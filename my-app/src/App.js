@@ -12,7 +12,12 @@ function App() {
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
-        <a className="App-link" href="/privacy-policy.html" target="_blank" rel="noopener noreferrer">
+        <a
+          className="App-link"
+          href={`${process.env.PUBLIC_URL || ''}/privacy-policy.html`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Privacy Policy
         </a>
       </header>
